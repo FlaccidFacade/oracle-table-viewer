@@ -5,21 +5,24 @@
 # Best For: Users and organizations that prioritize system stability and long-term support, such as servers, workstations, and production environments.
 FROM opensuse/leap
 
+# Disable interactive prompts
+RUN echo 'non_interactive = 1' >> /etc/zypp/zypp.conf 
+
 # Refresh the package index
-RUN sudo zypper refresh
+RUN  zypper refresh
 
 # Install Java
-RUN sudo zypper install java-11-openjdk
+RUN  zypper install -l -n java-11-openjdk
 # Set the JAVA_HOME environment variable
 ENV JAVA_HOME /usr/lib/jvm/java-11-openjdk
 # Update the PATH environment variable to include the Java bin directory
 ENV PATH $PATH:$JAVA_HOME/bin
 
 # Install and Start Tomcat Server
-RUN sudo zypper install tomcat10
+RUN  zypper install -l -n tomcat10
 # This will use java_home as default runtime
-RUN sudo systemctl start tomcat10
-RUN sudo systemctl enable tomcat10
+RUN  systemctl start tomcat10
+RUN  systemctl enable tomcat10
 
 
 # confirmation versions

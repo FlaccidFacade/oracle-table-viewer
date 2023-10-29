@@ -7,7 +7,7 @@
 		// }
 		"dockerComposeFile": "docker-compose.yml",
 		"service": "devcontainer",
-		"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}"
+		"workspaceFolder": "/workspace"
 	
 	// "name": "Docker in Docker",
 	// // Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
