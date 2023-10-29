@@ -1,9 +1,11 @@
 version: '3.8'
 services:
   devcontainer:
-    image: mcr.microsoft.com/devcontainers/base:ubuntu
+    build: 
+      context: .
+      dockerfile: local.dockerfile
     volumes:
-      - ../..:/workspaces:cached
+      - ../..:/workspaces:cached      
     network_mode: service:db
     command: sleep infinity
 
