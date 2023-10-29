@@ -1,0 +1,65 @@
+{
+    "workbench.colorTheme": "Sublime Monokai",
+     /******************************************************/
+    /********** Standard Indent Highlight Config **********/
+    /******************************************************/
+    /* Whether to highlight the indent of the block enclosing the current line */
+    "indenticator.showIndentGuide": true,
+    /* Color of the indent marker for dark themes */
+    "indenticator.color.dark": "purple",
+    /* Color of the indent marker for light themes */
+    "indenticator.color.light": "#999",
+    /* Width of the indent marker in pixels */
+    "indenticator.width": 2,
+    /* Line style of the indent marker (e.g. "inset", "dashed", "dotted", ...) */
+    "indenticator.style": "inset",
+    /* Whether to display the hover near the indent line */
+    "indenticator.showHover": false,
+    /* Wether to highlight the contained code block when hovering the indent line. If activated, the peeked content will be shown at top or bottom of the block, otherwise it will be shown at cursor position.*/
+    "indenticator.hover.highlight": true,
+    /* Lines before the current indent to be shown on hover */
+    "indenticator.hover.peekBack": 1,
+    /* Lines after the current indent to be shown on hover */
+    "indenticator.hover.peekForward": 0,
+    /* Remove lines from the hover at the beginning and end that have less characters than this */
+    "indenticator.hover.trimLinesShorterThan": 2,
+    /* Block placeholder to be written between peeked lines */
+    "indenticator.hover.peekBlockPlaceholder": "...",
+
+    /***************************************************/
+    /********** Inner Indent Highlight Config **********/
+    /***************************************************/
+    /* Whether to highlight the indent of the block enclosed by the current line */
+    "indenticator.inner.showHighlight": false,
+
+    
+    /* Color of the indent marker for dark themes */
+    "indenticator.inner.color.dark": "red",
+    /* Color of the indent marker for light themes */
+    "indenticator.inner.color.light": "#999",
+    /* Width of the indent marker in pixels */
+    "indenticator.inner.width": 1,
+    /* Line style of the indent marker (e.g. "inset", "dashed", "dotted", ...) */
+    "indenticator.inner.style": "inset",
+    /* Whether to display the hover near the inner indent line */
+    "indenticator.inner.showHover": false,
+    /* Wether to highlight the contained code block when hovering the indent line. If activated, the peeked content will be shown at top or bottom of the block, otherwise it will be shown at cursor position.*/
+    "indenticator.inner.hover.highlight": true,
+    /* Lines before the current inner indent to be shown on hover */
+    "indenticator.inner.hover.peekBack": 1,
+    /* Lines after the current inner indent to be shown on hover */
+    "indenticator.inner.hover.peekForward": 0,
+    /* Remove lines from the inner indent hover at the beginning and end that have less characters than this */
+    "indenticator.inner.hover.trimLinesShorterThan": 2,
+    /* Block placeholder to be written between peeked lines */
+    "indenticator.inner.hover.peekBlockPlaceholder": "...",
+    /* Whether to display the current indent depth on the statusbar */
+
+    /********************************************/
+    /********** Further Configurations **********/
+    /********************************************/
+    "indenticator.showCurrentDepthInStatusBar": true,
+    /* A construct with language identifiers as properties containing a subset of indenticator options to be applied for that language */
+    "indenticator.languageSpecific": {},
+    "editor.guides.indentation": true
+}
