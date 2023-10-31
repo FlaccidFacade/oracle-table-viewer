@@ -12,14 +12,14 @@ RUN echo 'non_interactive = 1' >> /etc/zypp/zypp.conf
 RUN  zypper refresh
 
 # Install Java
-RUN  zypper install -l -n java-11-openjdk
+RUN zypper install --non-interactive -l -n java-11-openjdk
 # Set the JAVA_HOME environment variable
 ENV JAVA_HOME /usr/lib/jvm/java-11-openjdk
 # Update the PATH environment variable to include the Java bin directory
 ENV PATH $PATH:$JAVA_HOME/bin
 
 # Install and Start Tomcat Server
-RUN  zypper install -l -n tomcat10
+RUN  zypper install --non-interactive -l -n  tomcat10
 # This will use java_home as default runtime
 RUN  systemctl start tomcat10
 RUN  systemctl enable tomcat10
